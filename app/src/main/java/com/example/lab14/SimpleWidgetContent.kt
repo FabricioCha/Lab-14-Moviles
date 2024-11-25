@@ -37,10 +37,12 @@ class SimpleWidgetContent : GlanceAppWidget() {
             verticalAlignment = Alignment.Top,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Text(text = "¿A donde quieres dirigirte?", modifier = GlanceModifier.padding(12.dp))
+            Text(text = "Nivel del agua en el tanque 80%", modifier = GlanceModifier.padding(12.dp))
+            Text(text = "Flujo 1737.5 L/min", modifier = GlanceModifier.padding(12.dp))
+            Text(text = "Estado: Abierto", modifier = GlanceModifier.padding(12.dp))
             Row(horizontalAlignment = Alignment.CenterHorizontally) {
                 Button(
-                    text = "Página Principal",
+                    text = "Abrir App",
                     onClick = actionStartActivity<MainActivity>()
                 )
 

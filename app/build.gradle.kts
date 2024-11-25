@@ -6,12 +6,14 @@ plugins {
 
 android {
     namespace = "com.example.lab14"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.lab14"
         minSdk = 24
-        targetSdk = 34
+        //noinspection EditedTargetSdkVersion
+        targetSdk = 35
+
         versionCode = 1
         versionName = "1.0"
 
@@ -36,7 +38,7 @@ android {
         kotlinCompilerExtensionVersion = "1.5"
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "11"
     }
     buildFeatures {
         compose = true
